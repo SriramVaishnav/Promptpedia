@@ -7,6 +7,8 @@ import { usePathname, useRouter } from "next/navigation";
 
 const PromptCard = ({ post, handleTagClick, handleEdit, handleDelete }) => {
 
+  console.log(post);
+
   const {data: session} = useSession();
   const pathName = usePathname();
   const router = useRouter();
@@ -14,7 +16,6 @@ const PromptCard = ({ post, handleTagClick, handleEdit, handleDelete }) => {
   const [copied, setCopied] = useState('')
 
   const handleProfileClick = () => {
-    console.log(post);
 
     if (post.creator._id === session?.user.id) return router.push("/profile");
 
@@ -32,7 +33,7 @@ const PromptCard = ({ post, handleTagClick, handleEdit, handleDelete }) => {
       <div className="flex justify-between items-start gap-5">
         <div className="flex-1 flex justify-start items-center gap-3 cursor-pointer" onClick={handleProfileClick}>
           <Image
-            src={post.creator.image}
+            src={post.creator?.image}
             alt="Profile Picture"
             width={40}
             height={40}
@@ -46,7 +47,7 @@ const PromptCard = ({ post, handleTagClick, handleEdit, handleDelete }) => {
 
         <div className="copy-btn" onClick={handleCopy}>
           <Image
-            src={copied === post.prompt ? 'assets/icons/tick.svg' : 'assets/icons/copy.svg'} width={15} height={15} className="cursor-pointer"
+            src={copied === post.prompt ? 'assets/icons/tick.svg' : 'assets/icons/copy.svg'} width={15} height={15} className="cursor-pointer" alt="Copy" 
           />
         </div>
       </div>
