@@ -7,8 +7,6 @@ import { usePathname, useRouter } from "next/navigation";
 
 const PromptCard = ({ post, handleTagClick, handleEdit, handleDelete }) => {
 
-  console.log(post);
-
   const {data: session} = useSession();
   const pathName = usePathname();
   const router = useRouter();
