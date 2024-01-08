@@ -120,6 +120,13 @@ Don't forget to give the project a star! Thanks again!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Roadmap
+
+- [ ] Improve the overall performance and speed.
+- [ ] Add loaders while fetching data from the database.
+- [ ] Add a NSFW filter that stops users from posting inappropriate content.
+- [ ] Allowing users to post pictures along with their texts.
+
 
 ## License
 
