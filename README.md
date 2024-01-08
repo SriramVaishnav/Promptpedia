@@ -5,6 +5,9 @@
 
 <h3 align="center">PROMPTPEDIA</h3>
 
+<br />
+<br />
+
   <p align="center">
     A platform to discover, create and share useful AI prompts.
     <br />
