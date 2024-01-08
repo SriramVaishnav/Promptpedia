@@ -11,7 +11,6 @@
     A platform to discover, create and share useful AI prompts.
     <br />
     <br />
-    <br />
     <a href="https://promptpedia.sriramvaishnav.com"><strong>Visit the Website »</strong></a>
     <br />
     <br />
