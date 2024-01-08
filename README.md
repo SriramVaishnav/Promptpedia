@@ -1,6 +1,4 @@
 <a name="readme-top"></a>
-
-<br />
 <div align="center">
 
 <h3 align="center">PROMPTPEDIA</h3>
