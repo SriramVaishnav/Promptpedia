@@ -16,6 +16,8 @@
     <a href="https://github.com/Oxlac/Promptpedia/issues">Report Bug</a>
     ·
     <a href="https://github.com/Oxlac/Promptpedia/issues">Request Feature</a>
+    ·
+    <a href="https://discord.gg/SBVAjYZ7t5">Discord Server</a>
   </p>
 </div>
 
