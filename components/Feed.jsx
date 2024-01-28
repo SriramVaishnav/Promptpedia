@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 
 import PromptCard from "./PromptCard";
+import ReactLoading from 'react-loading';
 
 const PromptCardList = ({ data, handleTagClick }) => {
   return (
@@ -25,12 +26,22 @@ const Feed = () => {
   const [searchText, setSearchText] = useState("");
   const [searchTimeout, setSearchTimeout] = useState(null);
   const [searchedResults, setSearchedResults] = useState([]);
+  const [loading, setLoading] = useState(true); // New loading state
+
 
   const fetchPosts = async () => {
-    const response = await fetch("/api/prompt");
-    const data = await response.json();
+    setLoading(true); // Set loading to true before fetching data
 
-    setAllPosts(data);
+    try {
+      const response = await fetch("/api/prompt");
+      const data = await response.json();
+
+      setAllPosts(data);
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    } finally {
+      setLoading(false); // Set loading to false after data is fetched (success or error)
+    }
   };
 
   useEffect(() => {
@@ -81,12 +92,14 @@ const Feed = () => {
       </form>
 
       {/* All Prompts */}
+      {loading && <ReactLoading height={200} width={200} />}
       {searchText ? (
         <PromptCardList
           data={searchedResults}
           handleTagClick={handleTagClick}
         />
       ) : (
+        
         <PromptCardList data={allPosts} handleTagClick={handleTagClick} />
       )}
     </section>
