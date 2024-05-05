@@ -139,9 +139,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 ## Contact
 
-Website: [Oxlac](https://oxlac.com) - contact@oxlac.com
+Website: [Sriram Vaishnav](https://sriramvaishnav.com) - sriramvaishnavr@gmail.com
 
-Project Link: [https://github.com/Oxlac/Promptpedia](https://github.com/Oxlac/Promptpedia)
+Project Link: [https://github.com/SriramVaishnav/Promptpedia](https://github.com/SriramVaishnav/Promptpedia)
 
 Developer: [Sriram Vaishnav](https://sriramvaishnav.com)
 
